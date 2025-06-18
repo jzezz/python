@@ -99,10 +99,6 @@ def run_friday():
             talk('searching' + search)
             pywhatkit.search(search)
 
-        elif 'open topper' in command:
-            webbrowser.open('https://www.toppr.com/plus/learn/')
-            talk('already on it sir')
-
         elif 'open whatsapp' in command:
             webbrowser.open('https://web.whatsapp.com')
             talk('almost there')
@@ -135,16 +131,6 @@ def run_friday():
             print('closing VScode')
             os.system('taskkill /f /im Code.exe')
 
-        elif 'start stumble guys' in command:
-            talk('starting stumble guys')
-            print('starting stumble guys')
-            stumble = "E:\\Stumble Guys\\Stumble Guys.exe"
-            os.startfile(stumble)
-
-        elif 'close stumble guys' in command:
-            talk('closing stumble guys')
-            os.system('taskkill /f /im Stumble Guys.exe')
-
 
         elif 'about you' in command:
             talk('i am friday,an assistant built to reduce your efforts by doing some simple tasks , created by sir jabez on 18th january 2022,at 12 46 am')
@@ -153,25 +139,11 @@ def run_friday():
             webbrowser.open('https://www.instagram.com/?hl=en')
             talk('almost there')
 
-        elif 'library' in command:
-            filepath = "C:\\Users\\jabez\\Downloads\\Compressed\\SumatraPDF-3.3.3-64\\SumatraPDF-3.3.3-64.exe"
-            print('opening pdf viewer')
-            os.startfile(filepath)
-
-        elif 'mySQL' in command:
-            table = "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\mysql.exe" "--defaults-file=C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini" "-uroot" "-p"
-            print('opening mySQL')
-            os.startfile(table)
 
         elif 'discord' in command:
             webbrowser.open('https://discord.com/channels/@me')
             talk('on my way into  discord')
 
-        elif 'physics pdf' in command:
-            pd = "I:\study material\DC Pangdey physics"
-            print('opening folder')
-            os.startfile(pd)
-            talk('opening folder')
 
         elif 'open notepad' in command:
             nt = "C:\\Windows\\System32\\notepad.exe"
@@ -183,10 +155,6 @@ def run_friday():
             talk('closing notepad')
             os.system("taskkill /f /im notepad.exe")
 
-        elif 'projects' in command:
-            pro = "I:\\projects"
-            talk('on it sir')
-            os.startfile(pro)
 
         elif 'spider-man' in command:
             talk('no not yet , i dont have enough money to buy the tickets')
